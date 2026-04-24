@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Animaciones CS3</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .contenedor{
+        width: 400px;
+        height: 200px;
+        border:1px solid black;
+        position: relative; /* Provoca el centrado del div contenedor */
+        margin: 0 auto; /* provoca el centrado del div contenedor */
+        overflow: hidden; /* para que sea una ventana */
+    }
+    .cuadrito{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: -200px;
+        top: 0px;
+        animation: cuadrito 6s infinite;
+    }
+    @keyframes cuadrito{
+        0%{
+            left: -200px;
+            top: 0px;
+            rotate:0deg;
+        }
+        50%{
+            left: 175px;
+            top: 100px;
+            rotate:60deg;
+        }
+        100%{
+            left: 400px;
+            top: 0px;
+            rotate:0deg;
+        }
+    }
+    .cuadrito img{
+        width: 100px;
+        height: 100px;
+    }
+    .cuadrito2{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: -100px;
+        top: 200px;
+        animation: cuadrito2 3s infinite 1s;
+    }
+    @keyframes cuadrito2{
+        0%{
+            left: -100px;
+            top: 200px;
+            rotate:0deg;
+        }
+        50%{
+            left: 175px;
+            top: 0px;
+            rotate:60deg;
+        }
+        100%{
+            left: 400px;
+            top: 200px;
+            rotate:0deg;
+        }
+    }
+    .cuadrito2 img{
+        width: 100px;
+        height: 100px;
+    }
+    .panal{
+        width: 400px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+    <div class = "contenedor">
+        <img src="img/paisaje.png" class = "panal">
+        <div class = "cuadrito">
+            <img src="img/abeja1.png" alt="Abeja" >
+        </div>
+        <div class = "cuadrito2">
+            <img src="img/abeja1.png" alt="Abeja">
+        </div>
+    </div>
+    <div 
+    
+
+
+
+
+
+</body>
+</html>
